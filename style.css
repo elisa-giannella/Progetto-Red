@@ -1,0 +1,180 @@
+/* Color: darkred, #C67F7F, #ececec
+
+Font:  Nova Square, Rajdhani
+
+font-family: 'Nova Square', cursive;
+font-family: 'Rajdhani', sans-serif;*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ROOT */
+:root {
+    --dark-color: darkred;
+    --primary-color: #C67F7F;
+    --light-color: #ececec;
+}
+
+
+/* COLORS & BG */
+.red {
+    color: darkred;
+}
+
+.white {
+    color: var(--light-color);
+}
+
+.bg-red {
+    background-color: darkred;
+}
+
+.bg-lightC {
+    background-color: var(--light-color);
+}
+
+
+/* FONT */
+.font-h {
+    font-family: 'Nova Square', cursive;
+}
+
+.font-p, p, .nav-link {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+
+/* GENERICI */
+.row {
+    margin: 0px !important;
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+
+
+/* NAVBAR */
+nav {
+    padding-top: 0px !important;
+    background-color: #E2DDDC;
+}
+
+.logo {
+    height: 70px;
+}
+
+.logo-sm {
+    height: 40px;
+}
+
+
+/* HEADER */
+header {
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.123)), url(./media/header-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.font-h1-lg {
+    font-size: 100px !important;
+}
+
+.font-h1-sm {
+    font-size: 50px !important;
+}
+
+.bg-mtns {
+    background: url(./media/header-img-2.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 95%;
+}
+
+
+/* SEZIONE PARAGRAFO */
+/* .quote::before{
+    content: open-quote;
+    color: var(--dark-color);
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.quote::after{
+    content: close-quote;
+    color: var(--dark-color);
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+} */
+
+
+/* SEZIONE ICONE */
+.pallino {
+    height: 2px;
+    color: var(--dark-color);
+}
+
+.pallino::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 46%;
+}
+
+
+/* SEZIONE BOTTONE */
+.btn-section {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.bg-section-1 {
+    background: url(./media/button-bg.png),linear-gradient(white, var(--light-color));
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* SEZIONE TIMELINE */
+.timeline-dot{
+    border-left: 4px solid var(--dark-color);
+    position: relative;
+}
+
+.timeline-dot::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+}
+
+.bg-section-2{
+    background: url(./media/timeline-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/* SEZIONE TEAM */
+.card-pic {
+    border-radius: 50%;
+    border: 2px solid var(--dark-color);
+}
